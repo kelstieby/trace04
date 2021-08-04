@@ -1,0 +1,40 @@
+.App {
+    text-align: center;
+    background-color: #282c34;
+    height: 100vh;
+    color: white;
+  }
+
+.List {
+  background-color: rgb(139, 231, 139);
+  height: 90%;
+  background-image: url("paper.jpg");
+  background-repeat: repeat-y;
+  background-position-y: top;
+  background-position-x: center;
+}
+
+h1 {
+  font-family:fantasy;
+  padding-top: 15px;
+  -webkit-text-stroke: hotpink;
+  -webkit-text-stroke-width: 2px;
+}
+
+button {
+  border-radius: 10px;
+  font-size: large;
+  padding: 10px;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  margin-top: 15px;
+}
+
+.btn {
+  padding: 5px;
+  font-size: 15px;
+  background-color: rgb(63, 104, 76);
+  color: white;
+  font-family: cursive;
+  border-color: white;
+  margin-top: -10px;
+}

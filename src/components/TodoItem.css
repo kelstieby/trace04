@@ -1,0 +1,38 @@
+.btn {
+    padding: 5px;
+    font-size: 15px;
+    background-color: rgb(63, 104, 76);
+    color: white;
+    font-family: cursive;
+    border-color: white;
+}
+
+h3 {
+    color: deeppink;
+    font-family: fantasy;
+    -webkit-text-stroke: hotpink;
+    -webkit-text-stroke-width: 2px;
+    padding-bottom: 0px;
+  }
+  
+  p {
+    color: rgb(173, 45, 98);
+    font-family: cursive;
+    padding-top: 0px;
+    text-indent: 10px;
+  }
+
+.items {
+    list-style-type: disc;
+    padding: 0%;
+    margin-left: 35%;
+    margin-right: 28%;
+    text-align: left;
+    line-height: 1.2;
+  }
+
+.done {
+    color: rgb(35, 87, 52);
+    text-indent: 10px;
+    font-weight: 600;
+}
