@@ -45,9 +45,17 @@ function App() {
   }
 
   const handleTaskCompleted = (id) => {
-    setTodo(prevTodo => 
-      todo
-      .filter.((item) => {item.id === id})
+    setTodo(todo.map(item => {
+      if (item.id === id)
+        return {title: item.title, description: item.description, id: id, stillTodo: false}
+      else 
+        return item
+    }).filter(obj => {
+      if (obj === null)
+        return false
+      else
+        return true
+    })
     )
   }
 
@@ -68,7 +76,6 @@ function App() {
       {button === 'Add' && <div className="List">
           <h1>To-Do List</h1>
           <button className="btn" onClick={filterList}>Filter out completed tasks</button>
-          {//<button className="btn">Sort alphabetically</button>}
           {todo
               .filter((item) => {
                 if(filtered === true) {
@@ -80,6 +87,7 @@ function App() {
               .map((item) => (
                 <TodoItem title={item.title}
                 description={item.description}
+                id = {item.id}
                 stillTodo={item.stillTodo}
                 handleDelete={handleTaskCompleted}  
               />))}
